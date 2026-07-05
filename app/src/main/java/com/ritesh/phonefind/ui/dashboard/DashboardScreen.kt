@@ -5,6 +5,8 @@ import android.app.admin.DevicePolicyManager
 import android.content.ComponentName
 import android.content.Context
 import android.location.Location
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,19 +15,20 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -37,9 +40,13 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.android.gms.location.LocationServices
@@ -68,7 +75,7 @@ fun DashboardScreen(
     val prefs = remember { SecurePreferences.getInstance(context) }
     val scope = rememberCoroutineScope()
 
-    val deviceId = prefs.deviceId ?: "Not Registered"
+    val deviceId = prefs.deviceId ?: "NOT REGISTERED"
     val deviceModel = remember { PhoneUtils.getDeviceModel() }
 
     var showPinDialog by remember { mutableStateOf(false) }
@@ -97,26 +104,43 @@ fun DashboardScreen(
                 inputPin = ""
                 pinError = null
             },
-            title = { Text("Enter Security PIN") },
+            title = { Text("ENTER SECURITY PIN", fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Black) },
             text = {
                 Column {
-                    Text("Enter your PhoneFind security PIN to deactivate Device Admin protection:")
+                    Text(
+                        "Enter your PhoneFind security PIN to deactivate Device Admin protection on this phone:",
+                        fontFamily = FontFamily.Monospace,
+                        fontSize = 11.sp
+                    )
                     Spacer(modifier = Modifier.height(12.dp))
                     OutlinedTextField(
                         value = inputPin,
                         onValueChange = { inputPin = it },
-                        label = { Text("PIN") },
+                        placeholder = { Text("PIN", fontFamily = FontFamily.Monospace) },
                         visualTransformation = PasswordVisualTransformation(),
-                        singleLine = true
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
+                        singleLine = true,
+                        shape = RoundedCornerShape(8.dp),
+                        colors = OutlinedTextFieldDefaults.colors(
+                            focusedContainerColor = Color(0xFFF9F9F7),
+                            unfocusedContainerColor = Color(0xFFF9F9F7),
+                            focusedBorderColor = Color.Black,
+                            unfocusedBorderColor = Color.Black,
+                            focusedTextColor = Color.Black,
+                            unfocusedTextColor = Color.Black
+                        ),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .border(2.dp, Color.Black, RoundedCornerShape(8.dp))
                     )
                     pinError?.let {
                         Spacer(modifier = Modifier.height(8.dp))
-                        Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                        Text(it, color = Color(0xFFDC2626), fontFamily = FontFamily.Monospace, fontSize = 11.sp, fontWeight = FontWeight.Bold)
                     }
                 }
             },
             confirmButton = {
-                Button(
+                TextButton(
                     onClick = {
                         if (prefs.pin == inputPin) {
                             dpm.removeActiveAdmin(adminComponent)
@@ -125,11 +149,11 @@ fun DashboardScreen(
                             inputPin = ""
                             pinError = null
                         } else {
-                            pinError = "Incorrect PIN."
+                            pinError = "INCORRECT PIN."
                         }
                     }
                 ) {
-                    Text("Deactivate Admin")
+                    Text("DEACTIVATE ADMIN", fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Black, color = Color(0xFFDC2626))
                 }
             },
             dismissButton = {
@@ -138,7 +162,7 @@ fun DashboardScreen(
                     inputPin = ""
                     pinError = null
                 }) {
-                    Text("Cancel")
+                    Text("CANCEL", fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold)
                 }
             }
         )
@@ -147,7 +171,8 @@ fun DashboardScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp)
+            .background(Color(0xFFF4F4EE))
+            .padding(20.dp)
             .verticalScroll(rememberScrollState()),
         contentAlignment = Alignment.TopCenter
     ) {
@@ -156,54 +181,233 @@ fun DashboardScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Device Protection Active",
-                style = MaterialTheme.typography.headlineMedium.copy(
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.primary
+                text = "Device Protection",
+                style = MaterialTheme.typography.headlineLarge.copy(
+                    fontWeight = FontWeight.Black,
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 26.sp,
+                    color = Color.Black
                 ),
-                modifier = Modifier.padding(bottom = 8.dp)
+                modifier = Modifier.padding(bottom = 4.dp)
             )
 
-            Text(
-                text = "PhoneFind client background monitoring is running.",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(bottom = 16.dp)
-            )
+            Box(
+                modifier = Modifier
+                    .padding(bottom = 20.dp)
+                    .background(Color(0xFFFFE600), shape = RoundedCornerShape(6.dp))
+                    .border(2.dp, Color.Black, shape = RoundedCornerShape(6.dp))
+                    .padding(horizontal = 10.dp, vertical = 4.dp)
+            ) {
+                Text(
+                    text = "BACKGROUND MONITORING ACTIVE",
+                    fontSize = 10.sp,
+                    fontFamily = FontFamily.Monospace,
+                    fontWeight = FontWeight.Black,
+                    color = Color.Black
+                )
+            }
 
-            statusMessage?.let {
-                Card(
+            statusMessage?.let { msg ->
+                Box(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(bottom = 16.dp),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
+                        .padding(bottom = 16.dp)
+                        .background(Color(0xFFD1FAE5), shape = RoundedCornerShape(8.dp))
+                        .border(2.dp, Color(0xFF059669), shape = RoundedCornerShape(8.dp))
+                        .padding(12.dp)
                 ) {
                     Text(
-                        text = it,
-                        style = MaterialTheme.typography.bodySmall,
-                        modifier = Modifier.padding(12.dp),
-                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                        text = msg,
+                        fontSize = 11.sp,
+                        fontFamily = FontFamily.Monospace,
+                        fontWeight = FontWeight.Bold,
+                        color = Color(0xFF065F46)
                     )
                 }
             }
 
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(16.dp),
-                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
-            ) {
-                Column(modifier = Modifier.padding(16.dp)) {
-                    Text("Device Info", fontWeight = FontWeight.Bold, style = MaterialTheme.typography.titleMedium)
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Text("Model: $deviceModel", style = MaterialTheme.typography.bodyMedium)
-                    Text("Device ID: $deviceId", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Text("Device Admin: ", style = MaterialTheme.typography.bodyMedium)
+            // Neo-Brutalist Device Info Card
+            Box(modifier = Modifier.fillMaxWidth()) {
+                Box(
+                    modifier = Modifier
+                        .matchParentSize()
+                        .offset(x = 4.dp, y = 4.dp)
+                        .background(Color.Black, shape = RoundedCornerShape(12.dp))
+                )
+
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(Color.White, shape = RoundedCornerShape(12.dp))
+                        .border(2.5.dp, Color.Black, shape = RoundedCornerShape(12.dp))
+                        .padding(18.dp)
+                ) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
                         Text(
-                            text = if (isAdminActive) "ACTIVE" else "INACTIVE",
-                            fontWeight = FontWeight.Bold,
-                            color = if (isAdminActive) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error
+                            text = "DEVICE METRICS",
+                            fontFamily = FontFamily.Monospace,
+                            fontWeight = FontWeight.Black,
+                            fontSize = 12.sp,
+                            color = Color.Black
+                        )
+                        Box(
+                            modifier = Modifier
+                                .background(if (isAdminActive) Color(0xFF00E676) else Color(0xFFFFD1D1), shape = RoundedCornerShape(4.dp))
+                                .border(1.5.dp, Color.Black, shape = RoundedCornerShape(4.dp))
+                                .padding(horizontal = 8.dp, vertical = 2.dp)
+                        ) {
+                            Text(
+                                text = if (isAdminActive) "ADMIN ACTIVE" else "ADMIN INACTIVE",
+                                fontSize = 9.sp,
+                                fontFamily = FontFamily.Monospace,
+                                fontWeight = FontWeight.Black,
+                                color = Color.Black
+                            )
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(10.dp))
+                    Text("MODEL: $deviceModel", fontFamily = FontFamily.Monospace, fontSize = 12.sp, fontWeight = FontWeight.Bold, color = Color.Black)
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Text("DEVICE ID: $deviceId", fontFamily = FontFamily.Monospace, fontSize = 10.sp, color = Color(0xFF666666))
+                }
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Background Services Card
+            Box(modifier = Modifier.fillMaxWidth()) {
+                Box(
+                    modifier = Modifier
+                        .matchParentSize()
+                        .offset(x = 4.dp, y = 4.dp)
+                        .background(Color.Black, shape = RoundedCornerShape(12.dp))
+                )
+
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(Color.White, shape = RoundedCornerShape(12.dp))
+                        .border(2.5.dp, Color.Black, shape = RoundedCornerShape(12.dp))
+                        .padding(18.dp)
+                ) {
+                    Text(
+                        text = "BACKGROUND SERVICE DAEMONS",
+                        fontFamily = FontFamily.Monospace,
+                        fontWeight = FontWeight.Black,
+                        fontSize = 12.sp,
+                        color = Color.Black
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text("• PERIODIC GPS LOCATION (EVERY 5 MINS)", fontFamily = FontFamily.Monospace, fontSize = 10.sp, color = Color(0xFF444444))
+                    Text("• PERIODIC SIM SERIAL CHECK (EVERY 15 MINS)", fontFamily = FontFamily.Monospace, fontSize = 10.sp, color = Color(0xFF444444))
+                    Text("• WEB COMMAND AUTO-SYNC (EVERY 5 SECS)", fontFamily = FontFamily.Monospace, fontSize = 10.sp, color = Color(0xFF444444))
+                }
+            }
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Manual Sync Button
+            Box(modifier = Modifier.fillMaxWidth().height(48.dp)) {
+                Box(
+                    modifier = Modifier
+                        .matchParentSize()
+                        .offset(x = 3.dp, y = 3.dp)
+                        .background(Color.Black, shape = RoundedCornerShape(8.dp))
+                )
+
+                Button(
+                    onClick = {
+                        scope.launch {
+                            checkAndExecutePendingCommands(context, prefs) { msg ->
+                                statusMessage = msg
+                            }
+                        }
+                    },
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .border(2.5.dp, Color.Black, RoundedCornerShape(8.dp)),
+                    shape = RoundedCornerShape(8.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF00E676),
+                        contentColor = Color.Black
+                    )
+                ) {
+                    Text(
+                        text = "SYNC & RUN WEB COMMANDS NOW",
+                        fontSize = 12.sp,
+                        fontFamily = FontFamily.Monospace,
+                        fontWeight = FontWeight.Black,
+                        color = Color.Black
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // Stop Active Alarm Button
+            Box(modifier = Modifier.fillMaxWidth().height(48.dp)) {
+                Box(
+                    modifier = Modifier
+                        .matchParentSize()
+                        .offset(x = 3.dp, y = 3.dp)
+                        .background(Color.Black, shape = RoundedCornerShape(8.dp))
+                )
+
+                Button(
+                    onClick = { SoundUtils.stopAlarm() },
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .border(2.5.dp, Color.Black, RoundedCornerShape(8.dp)),
+                    shape = RoundedCornerShape(8.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFFFFE600),
+                        contentColor = Color.Black
+                    )
+                ) {
+                    Text(
+                        text = "STOP ALARM SOUND",
+                        fontSize = 12.sp,
+                        fontFamily = FontFamily.Monospace,
+                        fontWeight = FontWeight.Black,
+                        color = Color.Black
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // Deactivate Admin Button
+            if (isAdminActive) {
+                Box(modifier = Modifier.fillMaxWidth().height(48.dp)) {
+                    Box(
+                        modifier = Modifier
+                            .matchParentSize()
+                            .offset(x = 3.dp, y = 3.dp)
+                            .background(Color.Black, shape = RoundedCornerShape(8.dp))
+                    )
+
+                    Button(
+                        onClick = { showPinDialog = true },
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .border(2.5.dp, Color.Black, RoundedCornerShape(8.dp)),
+                        shape = RoundedCornerShape(8.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = Color(0xFFFF4D4D),
+                            contentColor = Color.Black
+                        )
+                    ) {
+                        Text(
+                            text = "DEACTIVATE ADMIN (PIN REQUIRED)",
+                            fontSize = 11.sp,
+                            fontFamily = FontFamily.Monospace,
+                            fontWeight = FontWeight.Black,
+                            color = Color.Black
                         )
                     }
                 }
@@ -211,73 +415,20 @@ fun DashboardScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(16.dp)
-            ) {
-                Column(modifier = Modifier.padding(16.dp)) {
-                    Text("Background Services", fontWeight = FontWeight.Bold, style = MaterialTheme.typography.titleMedium)
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Text("• Periodic Location Check (Every 5 mins)", style = MaterialTheme.typography.bodySmall)
-                    Text("• Periodic SIM Check (Every 15 mins)", style = MaterialTheme.typography.bodySmall)
-                    Text("• Auto Pending Command Sync (Every 5 secs)", style = MaterialTheme.typography.bodySmall)
-                }
-            }
-
-            Spacer(modifier = Modifier.height(20.dp))
-
-            Button(
-                onClick = {
-                    scope.launch {
-                        checkAndExecutePendingCommands(context, prefs) { msg ->
-                            statusMessage = msg
-                        }
-                    }
-                },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(48.dp),
-                shape = RoundedCornerShape(12.dp)
-            ) {
-                Text("Sync & Run Web Commands Now")
-            }
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            OutlinedButton(
-                onClick = { SoundUtils.stopAlarm() },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(48.dp),
-                shape = RoundedCornerShape(12.dp)
-            ) {
-                Text("Stop Active Alarm Sound")
-            }
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            if (isAdminActive) {
-                Button(
-                    onClick = { showPinDialog = true },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(48.dp),
-                    shape = RoundedCornerShape(12.dp),
-                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
-                ) {
-                    Text("Deactivate Device Admin (PIN Required)")
-                }
-            }
-
-            Spacer(modifier = Modifier.height(12.dp))
-
+            // Logout Link Button
             TextButton(
                 onClick = {
                     prefs.clear()
                     onLogout()
                 }
             ) {
-                Text("Log Out / Reset App Data", color = MaterialTheme.colorScheme.error)
+                Text(
+                    text = "[ LOG OUT & RESET LOCAL CLIENT ]",
+                    fontFamily = FontFamily.Monospace,
+                    fontWeight = FontWeight.Black,
+                    fontSize = 11.sp,
+                    color = Color(0xFFDC2626)
+                )
             }
         }
     }

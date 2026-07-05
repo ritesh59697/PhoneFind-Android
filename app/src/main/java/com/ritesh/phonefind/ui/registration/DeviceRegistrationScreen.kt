@@ -12,26 +12,28 @@ import android.os.PowerManager
 import android.provider.Settings
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -43,8 +45,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
@@ -91,7 +96,6 @@ fun DeviceRegistrationScreen(
     var showRationaleDialog by remember { mutableStateOf(false) }
     var rationaleText by remember { mutableStateOf("") }
 
-    // Launcher for Foreground Permissions
     val foregroundPermissionsLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions()
     ) { permissions ->
@@ -107,7 +111,6 @@ fun DeviceRegistrationScreen(
         }
     }
 
-    // Launcher for Background Location (MUST be requested separately AFTER foreground is granted)
     val backgroundLocationLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission()
     ) { isGranted ->
@@ -119,7 +122,6 @@ fun DeviceRegistrationScreen(
         }
     }
 
-    // Launcher for Device Admin
     val deviceAdminLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.StartActivityForResult()
     ) {
@@ -136,8 +138,8 @@ fun DeviceRegistrationScreen(
     if (showRationaleDialog) {
         AlertDialog(
             onDismissRequest = { showRationaleDialog = false },
-            title = { Text("Permission Required") },
-            text = { Text(rationaleText) },
+            title = { Text("Permission Required", fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold) },
+            text = { Text(rationaleText, fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
             confirmButton = {
                 TextButton(onClick = {
                     showRationaleDialog = false
@@ -146,12 +148,12 @@ fun DeviceRegistrationScreen(
                     }
                     context.startActivity(intent)
                 }) {
-                    Text("Open Settings")
+                    Text("Open Settings", fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold)
                 }
             },
             dismissButton = {
                 TextButton(onClick = { showRationaleDialog = false }) {
-                    Text("Dismiss")
+                    Text("Dismiss", fontFamily = FontFamily.Monospace)
                 }
             }
         )
@@ -160,9 +162,10 @@ fun DeviceRegistrationScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp)
+            .background(Color(0xFFF4F4EE))
+            .padding(20.dp)
             .verticalScroll(rememberScrollState()),
-        contentAlignment = Alignment.Center
+        contentAlignment = Alignment.TopCenter
     ) {
         Column(
             modifier = Modifier.fillMaxWidth(),
@@ -171,23 +174,34 @@ fun DeviceRegistrationScreen(
         ) {
             Text(
                 text = "Device Registration",
-                style = MaterialTheme.typography.headlineMedium.copy(
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.primary
+                style = MaterialTheme.typography.headlineLarge.copy(
+                    fontWeight = FontWeight.Black,
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 26.sp,
+                    color = Color.Black
                 ),
-                modifier = Modifier.padding(bottom = 8.dp)
+                modifier = Modifier.padding(bottom = 4.dp)
             )
 
-            Text(
-                text = "Grant required permissions and register this phone to enable anti-theft monitoring.",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(bottom = 24.dp)
-            )
+            Box(
+                modifier = Modifier
+                    .padding(bottom = 20.dp)
+                    .background(Color(0xFFFFE600), shape = RoundedCornerShape(6.dp))
+                    .border(2.dp, Color.Black, shape = RoundedCornerShape(6.dp))
+                    .padding(horizontal = 10.dp, vertical = 4.dp)
+            ) {
+                Text(
+                    text = "HARDWARE ONBOARDING STEPS",
+                    fontSize = 10.sp,
+                    fontFamily = FontFamily.Monospace,
+                    fontWeight = FontWeight.Black,
+                    color = Color.Black
+                )
+            }
 
-            // Step A: Foreground Permissions
-            PermissionStepCard(
-                title = "1. Foreground Permissions",
+            // Step 1: Foreground Permissions
+            NeoPermissionStepCard(
+                title = "1. FOREGROUND PERMISSIONS",
                 description = "Location & Read Phone State (SIM serial check)",
                 isGranted = hasForegroundLocation && hasPhoneState,
                 onRequest = {
@@ -203,12 +217,12 @@ fun DeviceRegistrationScreen(
                 }
             )
 
-            Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(14.dp))
 
-            // Step B: Background Location (Requested separately after foreground location granted)
-            PermissionStepCard(
-                title = "2. Background Location",
-                description = "Allow location tracking when app is in background",
+            // Step 2: Background Location
+            NeoPermissionStepCard(
+                title = "2. BACKGROUND LOCATION",
+                description = "Track lost device location even when app is closed",
                 isGranted = hasBackgroundLocation,
                 onRequest = {
                     if (!hasForegroundLocation) {
@@ -220,12 +234,12 @@ fun DeviceRegistrationScreen(
                 }
             )
 
-            Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(14.dp))
 
-            // Step C: Battery Optimization Exemption
-            PermissionStepCard(
-                title = "3. Battery Optimization Exemption",
-                description = "Ensure periodic background SIM & location checks run reliably",
+            // Step 3: Battery Optimization Exemption
+            NeoPermissionStepCard(
+                title = "3. BATTERY EXEMPTION",
+                description = "Ensures background SIM & GPS checks run reliably 24/7",
                 isGranted = isIgnoringBatteryOptimizations,
                 onRequest = {
                     try {
@@ -244,12 +258,12 @@ fun DeviceRegistrationScreen(
                 }
             )
 
-            Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(14.dp))
 
-            // Step D: Device Admin
-            PermissionStepCard(
-                title = "4. Device Admin Activation",
-                description = "Enables anti-tamper, remote lock, and wipe features",
+            // Step 4: Device Admin Activation
+            NeoPermissionStepCard(
+                title = "4. DEVICE ADMIN ACTIVATION",
+                description = "Enables anti-tamper, remote lock, and wipe protection",
                 isGranted = isDeviceAdminActive,
                 onRequest = {
                     val adminComponent = ComponentName(context, PhoneFindAdminReceiver::class.java)
@@ -264,29 +278,64 @@ fun DeviceRegistrationScreen(
             Spacer(modifier = Modifier.height(24.dp))
 
             if (registrationState is RegistrationState.Error) {
-                Text(
-                    text = (registrationState as RegistrationState.Error).message,
-                    color = MaterialTheme.colorScheme.error,
-                    style = MaterialTheme.typography.bodySmall,
-                    modifier = Modifier.padding(bottom = 16.dp)
-                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 16.dp)
+                        .background(Color(0xFFFFD1D1), shape = RoundedCornerShape(6.dp))
+                        .border(2.dp, Color(0xFFDC2626), shape = RoundedCornerShape(6.dp))
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = (registrationState as RegistrationState.Error).message,
+                        color = Color(0xFFDC2626),
+                        fontSize = 11.sp,
+                        fontFamily = FontFamily.Monospace,
+                        fontWeight = FontWeight.Black,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
             }
 
-            Button(
-                onClick = { viewModel.registerDevice() },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(50.dp),
-                shape = RoundedCornerShape(12.dp),
-                enabled = registrationState !is RegistrationState.InProgress
-            ) {
-                if (registrationState is RegistrationState.InProgress) {
-                    CircularProgressIndicator(
-                        modifier = Modifier.size(24.dp),
-                        color = MaterialTheme.colorScheme.onPrimary
-                    )
-                } else {
-                    Text("Register Device with Backend", fontSize = 16.sp)
+            // Registration Action Button with Hard Black Offset Shadow
+            Box(modifier = Modifier.fillMaxWidth().height(50.dp)) {
+                Box(
+                    modifier = Modifier
+                        .matchParentSize()
+                        .offset(x = 4.dp, y = 4.dp)
+                        .background(Color.Black, shape = RoundedCornerShape(8.dp))
+                )
+
+                Button(
+                    onClick = { viewModel.registerDevice() },
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .border(2.5.dp, Color.Black, RoundedCornerShape(8.dp)),
+                    shape = RoundedCornerShape(8.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF00E676),
+                        contentColor = Color.Black,
+                        disabledContainerColor = Color(0xFF00E676).copy(alpha = 0.5f)
+                    ),
+                    enabled = registrationState !is RegistrationState.InProgress
+                ) {
+                    if (registrationState is RegistrationState.InProgress) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(20.dp),
+                            color = Color.Black,
+                            strokeWidth = 2.5.dp
+                        )
+                    } else {
+                        Text(
+                            text = "REGISTER DEVICE WITH BACKEND",
+                            fontSize = 13.sp,
+                            fontFamily = FontFamily.Monospace,
+                            fontWeight = FontWeight.Black,
+                            letterSpacing = 1.sp,
+                            color = Color.Black
+                        )
+                    }
                 }
             }
         }
@@ -294,28 +343,87 @@ fun DeviceRegistrationScreen(
 }
 
 @Composable
-fun PermissionStepCard(
+fun NeoPermissionStepCard(
     title: String,
     description: String,
     isGranted: Boolean,
     onRequest: () -> Unit
 ) {
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(12.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = if (isGranted) MaterialTheme.colorScheme.surfaceVariant else MaterialTheme.colorScheme.surface
+    Box(modifier = Modifier.fillMaxWidth()) {
+        // Hard Black Offset Shadow
+        Box(
+            modifier = Modifier
+                .matchParentSize()
+                .offset(x = 4.dp, y = 4.dp)
+                .background(Color.Black, shape = RoundedCornerShape(10.dp))
         )
-    ) {
-        Column(modifier = Modifier.padding(16.dp)) {
-            Text(text = title, fontWeight = FontWeight.Bold, style = MaterialTheme.typography.titleMedium)
-            Text(text = description, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            Spacer(modifier = Modifier.height(8.dp))
+
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color.White, shape = RoundedCornerShape(10.dp))
+                .border(2.5.dp, Color.Black, shape = RoundedCornerShape(10.dp))
+                .padding(16.dp)
+        ) {
+            Text(
+                text = title,
+                fontFamily = FontFamily.Monospace,
+                fontWeight = FontWeight.Black,
+                fontSize = 12.sp,
+                color = Color.Black
+            )
+            Spacer(modifier = Modifier.height(2.dp))
+            Text(
+                text = description,
+                fontSize = 11.sp,
+                fontFamily = FontFamily.Monospace,
+                color = Color(0xFF555555),
+                lineHeight = 15.sp
+            )
+            Spacer(modifier = Modifier.height(10.dp))
+
             if (isGranted) {
-                Text(text = "✓ Granted", color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold)
+                Box(
+                    modifier = Modifier
+                        .background(Color(0xFF00E676), shape = RoundedCornerShape(6.dp))
+                        .border(2.dp, Color.Black, shape = RoundedCornerShape(6.dp))
+                        .padding(horizontal = 10.dp, vertical = 4.dp)
+                ) {
+                    Text(
+                        text = "✓ PERMISSION GRANTED",
+                        color = Color.Black,
+                        fontFamily = FontFamily.Monospace,
+                        fontWeight = FontWeight.Black,
+                        fontSize = 10.sp
+                    )
+                }
             } else {
-                OutlinedButton(onClick = onRequest) {
-                    Text("Grant / Enable")
+                Box(modifier = Modifier.height(36.dp)) {
+                    Box(
+                        modifier = Modifier
+                            .matchParentSize()
+                            .offset(x = 2.dp, y = 2.dp)
+                            .background(Color.Black, shape = RoundedCornerShape(6.dp))
+                    )
+                    Button(
+                        onClick = onRequest,
+                        shape = RoundedCornerShape(6.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = Color(0xFFFFE600),
+                            contentColor = Color.Black
+                        ),
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .border(2.dp, Color.Black, RoundedCornerShape(6.dp))
+                    ) {
+                        Text(
+                            text = "GRANT PERMISSION",
+                            fontSize = 10.sp,
+                            fontFamily = FontFamily.Monospace,
+                            fontWeight = FontWeight.Black,
+                            color = Color.Black
+                        )
+                    }
                 }
             }
         }
