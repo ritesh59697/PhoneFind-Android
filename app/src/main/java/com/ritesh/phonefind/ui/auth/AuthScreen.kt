@@ -15,7 +15,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
@@ -52,6 +51,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -82,7 +82,7 @@ fun AuthScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF0D1117)) // Premium sleek dark background
+            .background(Color(0xFF090D12)) // Deep Minimalist Obsidian
             .padding(20.dp),
         contentAlignment = Alignment.Center
     ) {
@@ -93,73 +93,76 @@ fun AuthScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            // App Brand Header Icon
+            // Brand Logo Frame
             Box(
                 modifier = Modifier
-                    .size(80.dp)
-                    .clip(RoundedCornerShape(20.dp))
-                    .background(Color(0xFF161B22))
-                    .border(1.dp, Color(0xFF30363D), RoundedCornerShape(20.dp)),
+                    .size(72.dp)
+                    .clip(RoundedCornerShape(16.dp))
+                    .background(Color(0xFF121820))
+                    .border(1.dp, Color(0xFF27303D), RoundedCornerShape(16.dp)),
                 contentAlignment = Alignment.Center
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ic_phonefind_logo),
                     contentDescription = "PhoneFind Logo",
-                    modifier = Modifier.size(54.dp)
+                    modifier = Modifier.size(48.dp)
                 )
             }
 
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "PhoneFind",
+                text = "PHONEFIND",
                 style = MaterialTheme.typography.headlineLarge.copy(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 32.sp,
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 28.sp,
+                    letterSpacing = 2.sp,
                     color = Color.White
                 )
             )
 
             Text(
-                text = "Anti-Theft & Device Security Portal",
-                style = MaterialTheme.typography.bodyMedium,
-                color = Color(0xFF8B949E),
+                text = "SECURITY & HARDWARE PORTAL",
+                fontSize = 11.sp,
+                fontFamily = FontFamily.Monospace,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF10B981),
                 modifier = Modifier.padding(top = 4.dp, bottom = 28.dp)
             )
 
-            // Auth Card Container
+            // Minimalist Brutalist Card Container
             Card(
                 modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(24.dp),
+                shape = RoundedCornerShape(16.dp),
                 colors = CardDefaults.cardColors(
-                    containerColor = Color(0xFF161B22)
+                    containerColor = Color(0xFF121820)
                 ),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFF30363D)),
-                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFF27303D))
             ) {
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(24.dp)
+                        .padding(20.dp)
                 ) {
-                    // Segmented Tab Pill Switcher
+                    // Segmented Monospace Tab Switcher
                     TabRow(
                         selectedTabIndex = selectedTab,
-                        containerColor = Color(0xFF0D1117),
+                        containerColor = Color(0xFF090D12),
                         contentColor = Color.White,
                         indicator = { tabPositions ->
                             Box(
                                 Modifier
                                     .tabIndicatorOffset(tabPositions[selectedTab])
                                     .height(3.dp)
-                                    .padding(horizontal = 24.dp)
-                                    .background(Color(0xFF238636), shape = RoundedCornerShape(3.dp))
+                                    .padding(horizontal = 20.dp)
+                                    .background(Color(0xFF10B981), shape = RoundedCornerShape(2.dp))
                             )
                         },
                         divider = {},
                         modifier = Modifier
-                            .clip(RoundedCornerShape(14.dp))
-                            .border(1.dp, Color(0xFF21262D), RoundedCornerShape(14.dp))
+                            .clip(RoundedCornerShape(10.dp))
+                            .border(1.dp, Color(0xFF1E2633), RoundedCornerShape(10.dp))
                     ) {
                         Tab(
                             selected = selectedTab == 0,
@@ -169,9 +172,11 @@ fun AuthScreen(
                             },
                             text = {
                                 Text(
-                                    "Log In",
-                                    fontWeight = if (selectedTab == 0) FontWeight.Bold else FontWeight.Normal,
-                                    color = if (selectedTab == 0) Color.White else Color(0xFF8B949E)
+                                    "LOG IN",
+                                    fontFamily = FontFamily.Monospace,
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 12.sp,
+                                    color = if (selectedTab == 0) Color.White else Color(0xFF6B7280)
                                 )
                             }
                         )
@@ -183,39 +188,42 @@ fun AuthScreen(
                             },
                             text = {
                                 Text(
-                                    "Sign Up",
-                                    fontWeight = if (selectedTab == 1) FontWeight.Bold else FontWeight.Normal,
-                                    color = if (selectedTab == 1) Color.White else Color(0xFF8B949E)
+                                    "SIGN UP",
+                                    fontFamily = FontFamily.Monospace,
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 12.sp,
+                                    color = if (selectedTab == 1) Color.White else Color(0xFF6B7280)
                                 )
                             }
                         )
                     }
 
-                    Spacer(modifier = Modifier.height(24.dp))
+                    Spacer(modifier = Modifier.height(20.dp))
 
                     // Email Input
                     Text(
                         text = "EMAIL ADDRESS",
-                        fontSize = 11.sp,
+                        fontSize = 10.sp,
+                        fontFamily = FontFamily.Monospace,
                         fontWeight = FontWeight.Bold,
-                        color = Color(0xFF8B949E),
+                        color = Color(0xFF9CA3AF),
                         modifier = Modifier.padding(bottom = 6.dp)
                     )
                     OutlinedTextField(
                         value = email,
                         onValueChange = { email = it },
-                        placeholder = { Text("name@example.com", color = Color(0xFF484F58)) },
+                        placeholder = { Text("name@domain.com", color = Color(0xFF4B5563), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
                         leadingIcon = {
-                            Icon(Icons.Default.Email, contentDescription = null, tint = Color(0xFF8B949E))
+                            Icon(Icons.Default.Email, contentDescription = null, tint = Color(0xFF9CA3AF), modifier = Modifier.size(18.dp))
                         },
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
                         singleLine = true,
-                        shape = RoundedCornerShape(14.dp),
+                        shape = RoundedCornerShape(10.dp),
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedContainerColor = Color(0xFF0D1117),
-                            unfocusedContainerColor = Color(0xFF0D1117),
-                            focusedBorderColor = Color(0xFF238636),
-                            unfocusedBorderColor = Color(0xFF30363D),
+                            focusedContainerColor = Color(0xFF090D12),
+                            unfocusedContainerColor = Color(0xFF090D12),
+                            focusedBorderColor = Color(0xFF10B981),
+                            unfocusedBorderColor = Color(0xFF27303D),
                             focusedTextColor = Color.White,
                             unfocusedTextColor = Color.White
                         ),
@@ -227,36 +235,38 @@ fun AuthScreen(
                     // Password Input
                     Text(
                         text = "PASSWORD",
-                        fontSize = 11.sp,
+                        fontSize = 10.sp,
+                        fontFamily = FontFamily.Monospace,
                         fontWeight = FontWeight.Bold,
-                        color = Color(0xFF8B949E),
+                        color = Color(0xFF9CA3AF),
                         modifier = Modifier.padding(bottom = 6.dp)
                     )
                     OutlinedTextField(
                         value = password,
                         onValueChange = { password = it },
-                        placeholder = { Text("••••••••", color = Color(0xFF484F58)) },
+                        placeholder = { Text("••••••••", color = Color(0xFF4B5563), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
                         leadingIcon = {
-                            Icon(Icons.Default.Lock, contentDescription = null, tint = Color(0xFF8B949E))
+                            Icon(Icons.Default.Lock, contentDescription = null, tint = Color(0xFF9CA3AF), modifier = Modifier.size(18.dp))
                         },
                         trailingIcon = {
                             IconButton(onClick = { passwordVisible = !passwordVisible }) {
                                 Icon(
                                     imageVector = if (passwordVisible) Icons.Default.Visibility else Icons.Default.VisibilityOff,
                                     contentDescription = if (passwordVisible) "Hide password" else "Show password",
-                                    tint = Color(0xFF8B949E)
+                                    tint = Color(0xFF9CA3AF),
+                                    modifier = Modifier.size(18.dp)
                                 )
                             }
                         },
                         visualTransformation = if (passwordVisible) VisualTransformation.None else PasswordVisualTransformation(),
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
                         singleLine = true,
-                        shape = RoundedCornerShape(14.dp),
+                        shape = RoundedCornerShape(10.dp),
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedContainerColor = Color(0xFF0D1117),
-                            unfocusedContainerColor = Color(0xFF0D1117),
-                            focusedBorderColor = Color(0xFF238636),
-                            unfocusedBorderColor = Color(0xFF30363D),
+                            focusedContainerColor = Color(0xFF090D12),
+                            unfocusedContainerColor = Color(0xFF090D12),
+                            focusedBorderColor = Color(0xFF10B981),
+                            unfocusedBorderColor = Color(0xFF27303D),
                             focusedTextColor = Color.White,
                             unfocusedTextColor = Color.White
                         ),
@@ -265,9 +275,10 @@ fun AuthScreen(
 
                     if (selectedTab == 1) {
                         Text(
-                            text = "Must be at least 8 characters long",
-                            fontSize = 11.sp,
-                            color = Color(0xFF8B949E),
+                            text = "MINIMUM 8 CHARACTERS REQUIRED",
+                            fontSize = 10.sp,
+                            fontFamily = FontFamily.Monospace,
+                            color = Color(0xFF6B7280),
                             modifier = Modifier.padding(top = 4.dp)
                         )
                     }
@@ -276,15 +287,16 @@ fun AuthScreen(
                         Spacer(modifier = Modifier.height(12.dp))
                         Text(
                             text = (uiState as AuthUiState.Error).message,
-                            color = Color(0xFFF85149),
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Medium,
+                            color = Color(0xFFEF4444),
+                            fontSize = 11.sp,
+                            fontFamily = FontFamily.Monospace,
+                            fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                             modifier = Modifier.fillMaxWidth()
                         )
                     }
 
-                    Spacer(modifier = Modifier.height(24.dp))
+                    Spacer(modifier = Modifier.height(20.dp))
 
                     // Submit Action Button
                     Button(
@@ -297,26 +309,28 @@ fun AuthScreen(
                         },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .height(52.dp),
-                        shape = RoundedCornerShape(14.dp),
+                            .height(48.dp),
+                        shape = RoundedCornerShape(10.dp),
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = Color(0xFF238636),
+                            containerColor = Color(0xFF10B981),
                             contentColor = Color.White,
-                            disabledContainerColor = Color(0xFF238636).copy(alpha = 0.5f)
+                            disabledContainerColor = Color(0xFF10B981).copy(alpha = 0.4f)
                         ),
                         enabled = uiState !is AuthUiState.Loading && email.isNotBlank() && password.isNotBlank()
                     ) {
                         if (uiState is AuthUiState.Loading) {
                             CircularProgressIndicator(
-                                modifier = Modifier.size(22.dp),
+                                modifier = Modifier.size(20.dp),
                                 color = Color.White,
-                                strokeWidth = 2.5.dp
+                                strokeWidth = 2.dp
                             )
                         } else {
                             Text(
-                                text = if (selectedTab == 0) "Sign In to Client" else "Create Security Account",
-                                fontSize = 15.sp,
-                                fontWeight = FontWeight.Bold
+                                text = if (selectedTab == 0) "AUTHENTICATE CONSOLE" else "INITIALIZE ACCOUNT",
+                                fontSize = 13.sp,
+                                fontFamily = FontFamily.Monospace,
+                                fontWeight = FontWeight.Bold,
+                                letterSpacing = 1.sp
                             )
                         }
                     }
@@ -333,14 +347,15 @@ fun AuthScreen(
                 Icon(
                     imageVector = Icons.Default.Shield,
                     contentDescription = null,
-                    tint = Color(0xFF3FB950),
-                    modifier = Modifier.size(16.dp)
+                    tint = Color(0xFF10B981),
+                    modifier = Modifier.size(14.dp)
                 )
                 Spacer(modifier = Modifier.width(6.dp))
                 Text(
-                    text = "Hardware-Backed Encrypted Connection",
-                    fontSize = 12.sp,
-                    color = Color(0xFF8B949E)
+                    text = "HARDWARE-BACKED HARDWARE SECURITY",
+                    fontSize = 10.sp,
+                    fontFamily = FontFamily.Monospace,
+                    color = Color(0xFF6B7280)
                 )
             }
         }
