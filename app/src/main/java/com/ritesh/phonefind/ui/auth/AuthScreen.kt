@@ -82,7 +82,7 @@ fun AuthScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF090D12)) // Deep Minimalist Obsidian
+            .background(Color(0xFF0C0E12)) // Deep Neo-Brutalist Slate
             .padding(20.dp),
         contentAlignment = Alignment.Center
     ) {
@@ -96,16 +96,16 @@ fun AuthScreen(
             // Brand Logo Frame
             Box(
                 modifier = Modifier
-                    .size(72.dp)
+                    .size(76.dp)
                     .clip(RoundedCornerShape(16.dp))
-                    .background(Color(0xFF121820))
-                    .border(1.dp, Color(0xFF27303D), RoundedCornerShape(16.dp)),
+                    .background(Color(0xFF161A22))
+                    .border(2.dp, Color(0xFF30363D), RoundedCornerShape(16.dp)),
                 contentAlignment = Alignment.Center
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ic_phonefind_logo),
                     contentDescription = "PhoneFind Logo",
-                    modifier = Modifier.size(48.dp)
+                    modifier = Modifier.size(50.dp)
                 )
             }
 
@@ -123,22 +123,22 @@ fun AuthScreen(
             )
 
             Text(
-                text = "SECURITY & HARDWARE PORTAL",
-                fontSize = 11.sp,
+                text = "HARDWARE SECURITY & TELEMETRY",
+                fontSize = 10.sp,
                 fontFamily = FontFamily.Monospace,
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFF10B981),
                 modifier = Modifier.padding(top = 4.dp, bottom = 28.dp)
             )
 
-            // Minimalist Brutalist Card Container
+            // Neo-Brutalist Sharp 2dp Card Container
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(16.dp),
                 colors = CardDefaults.cardColors(
-                    containerColor = Color(0xFF121820)
+                    containerColor = Color(0xFF161A22)
                 ),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFF27303D))
+                border = androidx.compose.foundation.BorderStroke(2.dp, Color(0xFF30363D))
             ) {
                 Column(
                     modifier = Modifier
@@ -148,7 +148,7 @@ fun AuthScreen(
                     // Segmented Monospace Tab Switcher
                     TabRow(
                         selectedTabIndex = selectedTab,
-                        containerColor = Color(0xFF090D12),
+                        containerColor = Color(0xFF0C0E12),
                         contentColor = Color.White,
                         indicator = { tabPositions ->
                             Box(
@@ -162,7 +162,7 @@ fun AuthScreen(
                         divider = {},
                         modifier = Modifier
                             .clip(RoundedCornerShape(10.dp))
-                            .border(1.dp, Color(0xFF1E2633), RoundedCornerShape(10.dp))
+                            .border(2.dp, Color(0xFF21262D), RoundedCornerShape(10.dp))
                     ) {
                         Tab(
                             selected = selectedTab == 0,
@@ -176,7 +176,7 @@ fun AuthScreen(
                                     fontFamily = FontFamily.Monospace,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 12.sp,
-                                    color = if (selectedTab == 0) Color.White else Color(0xFF6B7280)
+                                    color = if (selectedTab == 0) Color.White else Color(0xFF8B949E)
                                 )
                             }
                         )
@@ -192,7 +192,7 @@ fun AuthScreen(
                                     fontFamily = FontFamily.Monospace,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 12.sp,
-                                    color = if (selectedTab == 1) Color.White else Color(0xFF6B7280)
+                                    color = if (selectedTab == 1) Color.White else Color(0xFF8B949E)
                                 )
                             }
                         )
@@ -206,24 +206,24 @@ fun AuthScreen(
                         fontSize = 10.sp,
                         fontFamily = FontFamily.Monospace,
                         fontWeight = FontWeight.Bold,
-                        color = Color(0xFF9CA3AF),
+                        color = Color(0xFF8B949E),
                         modifier = Modifier.padding(bottom = 6.dp)
                     )
                     OutlinedTextField(
                         value = email,
                         onValueChange = { email = it },
-                        placeholder = { Text("name@domain.com", color = Color(0xFF4B5563), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
+                        placeholder = { Text("name@domain.com", color = Color(0xFF484F58), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
                         leadingIcon = {
-                            Icon(Icons.Default.Email, contentDescription = null, tint = Color(0xFF9CA3AF), modifier = Modifier.size(18.dp))
+                            Icon(Icons.Default.Email, contentDescription = null, tint = Color(0xFF8B949E), modifier = Modifier.size(18.dp))
                         },
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
                         singleLine = true,
                         shape = RoundedCornerShape(10.dp),
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedContainerColor = Color(0xFF090D12),
-                            unfocusedContainerColor = Color(0xFF090D12),
+                            focusedContainerColor = Color(0xFF0C0E12),
+                            unfocusedContainerColor = Color(0xFF0C0E12),
                             focusedBorderColor = Color(0xFF10B981),
-                            unfocusedBorderColor = Color(0xFF27303D),
+                            unfocusedBorderColor = Color(0xFF30363D),
                             focusedTextColor = Color.White,
                             unfocusedTextColor = Color.White
                         ),
@@ -238,22 +238,22 @@ fun AuthScreen(
                         fontSize = 10.sp,
                         fontFamily = FontFamily.Monospace,
                         fontWeight = FontWeight.Bold,
-                        color = Color(0xFF9CA3AF),
+                        color = Color(0xFF8B949E),
                         modifier = Modifier.padding(bottom = 6.dp)
                     )
                     OutlinedTextField(
                         value = password,
                         onValueChange = { password = it },
-                        placeholder = { Text("••••••••", color = Color(0xFF4B5563), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
+                        placeholder = { Text("••••••••", color = Color(0xFF484F58), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
                         leadingIcon = {
-                            Icon(Icons.Default.Lock, contentDescription = null, tint = Color(0xFF9CA3AF), modifier = Modifier.size(18.dp))
+                            Icon(Icons.Default.Lock, contentDescription = null, tint = Color(0xFF8B949E), modifier = Modifier.size(18.dp))
                         },
                         trailingIcon = {
                             IconButton(onClick = { passwordVisible = !passwordVisible }) {
                                 Icon(
                                     imageVector = if (passwordVisible) Icons.Default.Visibility else Icons.Default.VisibilityOff,
                                     contentDescription = if (passwordVisible) "Hide password" else "Show password",
-                                    tint = Color(0xFF9CA3AF),
+                                    tint = Color(0xFF8B949E),
                                     modifier = Modifier.size(18.dp)
                                 )
                             }
@@ -263,10 +263,10 @@ fun AuthScreen(
                         singleLine = true,
                         shape = RoundedCornerShape(10.dp),
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedContainerColor = Color(0xFF090D12),
-                            unfocusedContainerColor = Color(0xFF090D12),
+                            focusedContainerColor = Color(0xFF0C0E12),
+                            unfocusedContainerColor = Color(0xFF0C0E12),
                             focusedBorderColor = Color(0xFF10B981),
-                            unfocusedBorderColor = Color(0xFF27303D),
+                            unfocusedBorderColor = Color(0xFF30363D),
                             focusedTextColor = Color.White,
                             unfocusedTextColor = Color.White
                         ),
@@ -278,7 +278,8 @@ fun AuthScreen(
                             text = "MINIMUM 8 CHARACTERS REQUIRED",
                             fontSize = 10.sp,
                             fontFamily = FontFamily.Monospace,
-                            color = Color(0xFF6B7280),
+                            fontWeight = FontWeight.Bold,
+                            color = Color(0xFF8B949E),
                             modifier = Modifier.padding(top = 4.dp)
                         )
                     }
@@ -287,7 +288,7 @@ fun AuthScreen(
                         Spacer(modifier = Modifier.height(12.dp))
                         Text(
                             text = (uiState as AuthUiState.Error).message,
-                            color = Color(0xFFEF4444),
+                            color = Color(0xFFF85149),
                             fontSize = 11.sp,
                             fontFamily = FontFamily.Monospace,
                             fontWeight = FontWeight.Bold,
@@ -298,7 +299,7 @@ fun AuthScreen(
 
                     Spacer(modifier = Modifier.height(20.dp))
 
-                    // Submit Action Button
+                    // Neo-Brutalist High-Contrast Submit Action Button
                     Button(
                         onClick = {
                             if (selectedTab == 0) {
@@ -309,7 +310,8 @@ fun AuthScreen(
                         },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .height(48.dp),
+                            .height(50.dp)
+                            .border(2.dp, Color(0xFF10B981), RoundedCornerShape(10.dp)),
                         shape = RoundedCornerShape(10.dp),
                         colors = ButtonDefaults.buttonColors(
                             containerColor = Color(0xFF10B981),
@@ -322,7 +324,7 @@ fun AuthScreen(
                             CircularProgressIndicator(
                                 modifier = Modifier.size(20.dp),
                                 color = Color.White,
-                                strokeWidth = 2.dp
+                                strokeWidth = 2.5.dp
                             )
                         } else {
                             Text(
@@ -355,7 +357,8 @@ fun AuthScreen(
                     text = "HARDWARE-BACKED HARDWARE SECURITY",
                     fontSize = 10.sp,
                     fontFamily = FontFamily.Monospace,
-                    color = Color(0xFF6B7280)
+                    fontWeight = FontWeight.Bold,
+                    color = Color(0xFF8B949E)
                 )
             }
         }
