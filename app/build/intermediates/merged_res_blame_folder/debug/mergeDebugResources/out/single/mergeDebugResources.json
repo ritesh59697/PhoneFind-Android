@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/ritesh/.gradle/daemon/8.14.5/com.ritesh.phonefind.app-debug-5:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/ritesh/.gradle/daemon/8.14.5/com.ritesh.phonefind.app-main-7:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/ritesh/.gradle/daemon/8.14.5/com.ritesh.phonefind.app-debug-5:/xml_device_admin_policies.xml.flat",
+        "source": "/Users/ritesh/.gradle/daemon/8.14.5/com.ritesh.phonefind.app-main-7:/xml/device_admin_policies.xml"
+    },
+    {
+        "merged": "com.ritesh.phonefind.app-debug-5:/drawable_ic_phonefind_logo.png.flat",
+        "source": "com.ritesh.phonefind.app-main-7:/drawable/ic_phonefind_logo.png"
+    },
+    {
+        "merged": "/Users/ritesh/.gradle/daemon/8.14.5/com.ritesh.phonefind.app-debug-5:/xml_backup_rules.xml.flat",
+        "source": "/Users/ritesh/.gradle/daemon/8.14.5/com.ritesh.phonefind.app-main-7:/xml/backup_rules.xml"
+    }
+]

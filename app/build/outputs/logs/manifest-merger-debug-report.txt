@@ -1,0 +1,982 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:2:1-67:12
+INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:2:1-67:12
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0514ba68e9e92e1eaf3050958322b2ab/transformed/play-services-location-21.3.0/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:17:1-66:12
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/960b8349a3c0a1eaacd0f2ed653e52be/transformed/firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/d5b5fdcb714140968a5d500e3839e61f/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/c8552a7e2aef7bbc48ee39639456df58/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/4518c444c9d5d5f98c093619a1ba9ac4/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/c453cfa49319a7f386953e45674cba38/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/453a79c3f81d42b81657acfa56c0dea3/transformed/navigation-compose-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/eb8527935baf7d7826454b962fbc189f/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/afba29f5eb146b9fec4cfa3bad312f3e/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/58a9ba109b7f61f18e5567745b7304b3/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/ef1950e2b73b6479c8933e6b6e886aeb/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c34890662449c6fd019d93d0de1ccad/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/adb6a2b05c5123a73e56c028863c9ae3/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/5219d0a759a9f6da6acf22c77d68f6fc/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2f2a12fa193a6932b01b462b89ac1458/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e4719c596a3cb4579e9cd118377f1ba/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/72d19627f3ccc0fb9ae93002721f4c72/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/9ce9d46d92179e4cf14aa0b04d880ea3/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/8bdc34cf390c159bc7381906cf9bedd0/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/21e47065704c54877ffbaf2a9e196224/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/6064b9913965c1311672800f6560d689/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/c53960d70512448ec445b27cd0a22df3/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/b325fa908e22a87152ea0d6d17a28874/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/48b9838b070461224cf26666a02c55bd/transformed/activity-compose-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4edc9d8c6c2b1f60a607068320cacd1c/transformed/activity-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/61d3a91afb655e6d992bb108eeaaafca/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/01523b4eceaa33ca0bb610ad8a0e1487/transformed/activity-1.9.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/f2265787714180990eedfa94b914a26f/transformed/work-runtime-ktx-2.9.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/bdb4fcc32750aa1638782c5f4a846b63/transformed/lifecycle-livedata-core-ktx-2.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/d5ce4edc831faab64f2fb539648fbfac/transformed/lifecycle-livedata-core-2.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/93c00b8376cfb849995e3b7f28a9534b/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/bc3a8c9e8d26fcbc34f118a35d48b36a/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/6ec3cd70d3066f2f8baab355ba2ca848/transformed/play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/5a658a35008174478f4459a375c66d68/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/a2c7cbbb48be2002d2f4f160bb097d84/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/edec33eed073cfe5efc568c161e04b7e/transformed/lifecycle-viewmodel-2.8.2/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/672163782ead89b5a524cb9be10e2a4c/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/71fd69ced628f2a082bc777c79ef7014/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/fff8a2ebf6596fa32c31337cb47f0e29/transformed/lifecycle-service-2.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/c37314a3d52d3cb9bd36f44fdbdfd7a8/transformed/lifecycle-livedata-2.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/cc8dc167a19c0387496569917001633b/transformed/lifecycle-viewmodel-ktx-2.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/ba0071587c01cf9c623a67f340a3b476/transformed/lifecycle-viewmodel-savedstate-2.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/9dd60c5e0234c4b3950fa48548a0eb0d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/6881729d49823968b71f739d6edd3d22/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2528a24844998c522e96b0deaa06514b/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/d2b9fc28fe1972a72baa396cd75ae298/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-ktx:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/01377b09efd6f973893e304543df04d7/transformed/room-ktx-2.5.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/6193de85f4998f107ac199752b4389fa/transformed/firebase-installations-interop-17.1.1/AndroidManifest.xml:15:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/f6a5b43db6588c19d2501fed355476e9/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/814bb2b24dab3450fa385a1240649677/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/bbe01064d540e1709f9b14bd49ec0c4b/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/ceaf3cafe8ae23f9d77b2e11664175ca/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/bacdda49a00101955a06ff503b9fd167/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/982bc825399350deda4e2d9a1c25f87d/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/06ae7bf20bf33ae1dbc3cdafaee8f793/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/440f0319d335a098b4657d9a28b92247/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/9b441d35368d8b0c528c770308b5d610/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/ritesh/.gradle/caches/8.14.5/transforms/1d4957e808982c4e83c4fa9950c5417d/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/a3ac7bb7e41cebf50a0e9ca55745c505/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/3442e2f3d7e941348d1e01e1b83f9738/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/7c4bde07318f695df204144ad1da1d2a/transformed/firebase-components-18.0.0/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/ab3a5feedd983a018ee9e673e41e3b1b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/7661483473c0464730e0d9d9450a4a80/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:15:1-31:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/911ae164a96cef40a30a250ccee6a103/transformed/firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/cb0205467cab999c536dc05303f3a51f/transformed/transport-api-3.1.0/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/adbc772536e219ad3736e4e0fdb07c49/transformed/sqlite-2.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/c1b73a6564f50f821eef6714a705e769/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/402f35f3b0762822ea99e7064cbafef7/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/61df5ba8db8981a8a0389395f1895d64/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/b84dae659fb0b4d5f13b010c71b2ca52/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:25:5-67
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:7:5-79
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:8:22-72
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:11:5-85
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:11:22-82
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:12:5-77
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:23:5-77
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:23:5-77
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:12:22-74
+uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:13:5-95
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:13:22-92
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:14:5-81
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:5-81
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:14:22-78
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:15:22-77
+application
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:17:5-65:19
+INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:17:5-65:19
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0514ba68e9e92e1eaf3050958322b2ab/transformed/play-services-location-21.3.0/AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0514ba68e9e92e1eaf3050958322b2ab/transformed/play-services-location-21.3.0/AndroidManifest.xml:6:5-20
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:28:5-64:19
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:28:5-64:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/960b8349a3c0a1eaacd0f2ed653e52be/transformed/firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/960b8349a3c0a1eaacd0f2ed653e52be/transformed/firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/6ec3cd70d3066f2f8baab355ba2ca848/transformed/play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/6ec3cd70d3066f2f8baab355ba2ca848/transformed/play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/f6a5b43db6588c19d2501fed355476e9/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/f6a5b43db6588c19d2501fed355476e9/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/814bb2b24dab3450fa385a1240649677/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/814bb2b24dab3450fa385a1240649677/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/3442e2f3d7e941348d1e01e1b83f9738/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/3442e2f3d7e941348d1e01e1b83f9738/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/ab3a5feedd983a018ee9e673e41e3b1b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/ab3a5feedd983a018ee9e673e41e3b1b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:21:5-29:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:21:5-29:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:25:5-39:19
+	android:extractNativeLibs
+		INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:24:9-35
+	android:label
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:23:9-41
+	android:fullBackupContent
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:20:9-54
+	android:roundIcon
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:22:9-56
+	tools:targetApi
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:27:9-29
+	android:icon
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:21:9-51
+	android:allowBackup
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:25:9-47
+	android:dataExtractionRules
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:19:9-65
+	android:usesCleartextTraffic
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:26:9-44
+activity#com.ritesh.phonefind.MainActivity
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:29:9-37:20
+	android:exported
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:31:13-36
+	android:theme
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:32:13-51
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:33:13-36:29
+action#android.intent.action.MAIN
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:35:27-74
+service#com.ritesh.phonefind.service.PhoneFindFcmService
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:40:9-46:19
+	android:exported
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:41:13-56
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:43:13-45:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:44:17-78
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:44:25-75
+receiver#com.ritesh.phonefind.receiver.PhoneFindAdminReceiver
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:49:9-63:20
+	android:label
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:52:13-48
+	android:exported
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:54:13-36
+	android:permission
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:53:13-70
+	android:description
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:51:13-60
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:50:13-60
+meta-data#android.app.device_admin
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:55:13-57:65
+	android:resource
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:57:17-62
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:56:17-56
+intent-filter#action:name:android.app.action.DEVICE_ADMIN_DISABLED+action:name:android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED+action:name:android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:58:13-62:29
+action#android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:59:17-82
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:59:25-79
+action#android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:60:17-92
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:60:25-89
+action#android.app.action.DEVICE_ADMIN_DISABLED
+ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:61:17-83
+	android:name
+		ADDED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:61:25-80
+uses-sdk
+INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0514ba68e9e92e1eaf3050958322b2ab/transformed/play-services-location-21.3.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0514ba68e9e92e1eaf3050958322b2ab/transformed/play-services-location-21.3.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/960b8349a3c0a1eaacd0f2ed653e52be/transformed/firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/960b8349a3c0a1eaacd0f2ed653e52be/transformed/firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/d5b5fdcb714140968a5d500e3839e61f/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/d5b5fdcb714140968a5d500e3839e61f/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/c8552a7e2aef7bbc48ee39639456df58/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/c8552a7e2aef7bbc48ee39639456df58/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/4518c444c9d5d5f98c093619a1ba9ac4/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/4518c444c9d5d5f98c093619a1ba9ac4/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/c453cfa49319a7f386953e45674cba38/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/c453cfa49319a7f386953e45674cba38/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/453a79c3f81d42b81657acfa56c0dea3/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/ritesh/.gradle/caches/8.14.5/transforms/453a79c3f81d42b81657acfa56c0dea3/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/eb8527935baf7d7826454b962fbc189f/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/eb8527935baf7d7826454b962fbc189f/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/afba29f5eb146b9fec4cfa3bad312f3e/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/afba29f5eb146b9fec4cfa3bad312f3e/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/58a9ba109b7f61f18e5567745b7304b3/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/58a9ba109b7f61f18e5567745b7304b3/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/ef1950e2b73b6479c8933e6b6e886aeb/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/ef1950e2b73b6479c8933e6b6e886aeb/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c34890662449c6fd019d93d0de1ccad/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c34890662449c6fd019d93d0de1ccad/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/adb6a2b05c5123a73e56c028863c9ae3/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/adb6a2b05c5123a73e56c028863c9ae3/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/5219d0a759a9f6da6acf22c77d68f6fc/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/5219d0a759a9f6da6acf22c77d68f6fc/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2f2a12fa193a6932b01b462b89ac1458/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2f2a12fa193a6932b01b462b89ac1458/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e4719c596a3cb4579e9cd118377f1ba/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e4719c596a3cb4579e9cd118377f1ba/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/72d19627f3ccc0fb9ae93002721f4c72/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/72d19627f3ccc0fb9ae93002721f4c72/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/9ce9d46d92179e4cf14aa0b04d880ea3/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/9ce9d46d92179e4cf14aa0b04d880ea3/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/8bdc34cf390c159bc7381906cf9bedd0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/8bdc34cf390c159bc7381906cf9bedd0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/21e47065704c54877ffbaf2a9e196224/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/21e47065704c54877ffbaf2a9e196224/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/6064b9913965c1311672800f6560d689/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/6064b9913965c1311672800f6560d689/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/c53960d70512448ec445b27cd0a22df3/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/c53960d70512448ec445b27cd0a22df3/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/b325fa908e22a87152ea0d6d17a28874/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/b325fa908e22a87152ea0d6d17a28874/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/48b9838b070461224cf26666a02c55bd/transformed/activity-compose-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/48b9838b070461224cf26666a02c55bd/transformed/activity-compose-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4edc9d8c6c2b1f60a607068320cacd1c/transformed/activity-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4edc9d8c6c2b1f60a607068320cacd1c/transformed/activity-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/61d3a91afb655e6d992bb108eeaaafca/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/61d3a91afb655e6d992bb108eeaaafca/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/01523b4eceaa33ca0bb610ad8a0e1487/transformed/activity-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/01523b4eceaa33ca0bb610ad8a0e1487/transformed/activity-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/f2265787714180990eedfa94b914a26f/transformed/work-runtime-ktx-2.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/f2265787714180990eedfa94b914a26f/transformed/work-runtime-ktx-2.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/bdb4fcc32750aa1638782c5f4a846b63/transformed/lifecycle-livedata-core-ktx-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/bdb4fcc32750aa1638782c5f4a846b63/transformed/lifecycle-livedata-core-ktx-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/d5ce4edc831faab64f2fb539648fbfac/transformed/lifecycle-livedata-core-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/d5ce4edc831faab64f2fb539648fbfac/transformed/lifecycle-livedata-core-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/93c00b8376cfb849995e3b7f28a9534b/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/93c00b8376cfb849995e3b7f28a9534b/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/bc3a8c9e8d26fcbc34f118a35d48b36a/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/bc3a8c9e8d26fcbc34f118a35d48b36a/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/6ec3cd70d3066f2f8baab355ba2ca848/transformed/play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/6ec3cd70d3066f2f8baab355ba2ca848/transformed/play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/5a658a35008174478f4459a375c66d68/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/5a658a35008174478f4459a375c66d68/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/a2c7cbbb48be2002d2f4f160bb097d84/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/a2c7cbbb48be2002d2f4f160bb097d84/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/edec33eed073cfe5efc568c161e04b7e/transformed/lifecycle-viewmodel-2.8.2/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/edec33eed073cfe5efc568c161e04b7e/transformed/lifecycle-viewmodel-2.8.2/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/672163782ead89b5a524cb9be10e2a4c/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/672163782ead89b5a524cb9be10e2a4c/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/71fd69ced628f2a082bc777c79ef7014/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/71fd69ced628f2a082bc777c79ef7014/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/fff8a2ebf6596fa32c31337cb47f0e29/transformed/lifecycle-service-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/fff8a2ebf6596fa32c31337cb47f0e29/transformed/lifecycle-service-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/c37314a3d52d3cb9bd36f44fdbdfd7a8/transformed/lifecycle-livedata-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/c37314a3d52d3cb9bd36f44fdbdfd7a8/transformed/lifecycle-livedata-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/cc8dc167a19c0387496569917001633b/transformed/lifecycle-viewmodel-ktx-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/cc8dc167a19c0387496569917001633b/transformed/lifecycle-viewmodel-ktx-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/ba0071587c01cf9c623a67f340a3b476/transformed/lifecycle-viewmodel-savedstate-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/ba0071587c01cf9c623a67f340a3b476/transformed/lifecycle-viewmodel-savedstate-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/9dd60c5e0234c4b3950fa48548a0eb0d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/9dd60c5e0234c4b3950fa48548a0eb0d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/6881729d49823968b71f739d6edd3d22/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/6881729d49823968b71f739d6edd3d22/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2528a24844998c522e96b0deaa06514b/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/2528a24844998c522e96b0deaa06514b/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/d2b9fc28fe1972a72baa396cd75ae298/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/d2b9fc28fe1972a72baa396cd75ae298/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-ktx:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/01377b09efd6f973893e304543df04d7/transformed/room-ktx-2.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/01377b09efd6f973893e304543df04d7/transformed/room-ktx-2.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/6193de85f4998f107ac199752b4389fa/transformed/firebase-installations-interop-17.1.1/AndroidManifest.xml:17:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/6193de85f4998f107ac199752b4389fa/transformed/firebase-installations-interop-17.1.1/AndroidManifest.xml:17:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/f6a5b43db6588c19d2501fed355476e9/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/f6a5b43db6588c19d2501fed355476e9/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/814bb2b24dab3450fa385a1240649677/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/814bb2b24dab3450fa385a1240649677/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/bbe01064d540e1709f9b14bd49ec0c4b/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/bbe01064d540e1709f9b14bd49ec0c4b/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/ceaf3cafe8ae23f9d77b2e11664175ca/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/ceaf3cafe8ae23f9d77b2e11664175ca/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/bacdda49a00101955a06ff503b9fd167/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/bacdda49a00101955a06ff503b9fd167/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/982bc825399350deda4e2d9a1c25f87d/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/982bc825399350deda4e2d9a1c25f87d/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/06ae7bf20bf33ae1dbc3cdafaee8f793/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/06ae7bf20bf33ae1dbc3cdafaee8f793/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/440f0319d335a098b4657d9a28b92247/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/440f0319d335a098b4657d9a28b92247/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/9b441d35368d8b0c528c770308b5d610/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/9b441d35368d8b0c528c770308b5d610/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/ritesh/.gradle/caches/8.14.5/transforms/1d4957e808982c4e83c4fa9950c5417d/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/ritesh/.gradle/caches/8.14.5/transforms/1d4957e808982c4e83c4fa9950c5417d/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/a3ac7bb7e41cebf50a0e9ca55745c505/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/a3ac7bb7e41cebf50a0e9ca55745c505/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/3442e2f3d7e941348d1e01e1b83f9738/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/3442e2f3d7e941348d1e01e1b83f9738/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/7c4bde07318f695df204144ad1da1d2a/transformed/firebase-components-18.0.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/7c4bde07318f695df204144ad1da1d2a/transformed/firebase-components-18.0.0/AndroidManifest.xml:18:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/ab3a5feedd983a018ee9e673e41e3b1b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/ab3a5feedd983a018ee9e673e41e3b1b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/7661483473c0464730e0d9d9450a4a80/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/7661483473c0464730e0d9d9450a4a80/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/911ae164a96cef40a30a250ccee6a103/transformed/firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/911ae164a96cef40a30a250ccee6a103/transformed/firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/cb0205467cab999c536dc05303f3a51f/transformed/transport-api-3.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/cb0205467cab999c536dc05303f3a51f/transformed/transport-api-3.1.0/AndroidManifest.xml:18:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/adbc772536e219ad3736e4e0fdb07c49/transformed/sqlite-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/adbc772536e219ad3736e4e0fdb07c49/transformed/sqlite-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/c1b73a6564f50f821eef6714a705e769/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/c1b73a6564f50f821eef6714a705e769/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/402f35f3b0762822ea99e7064cbafef7/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/402f35f3b0762822ea99e7064cbafef7/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/61df5ba8db8981a8a0389395f1895d64/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/61df5ba8db8981a8a0389395f1895d64/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/b84dae659fb0b4d5f13b010c71b2ca52/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/b84dae659fb0b4d5f13b010c71b2ca52/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:23:9-29:19
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:22:9-28:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:22:9-28:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:25:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:24:13-84
+meta-data#com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar
+ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:26:13-28:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:28:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:27:17-129
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:9:5-68
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:23:5-68
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:26:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/83767a8347c17ba060060aa1cc2e1911/transformed/play-services-cloud-messaging-17.2.0/AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:26:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:29:9-40:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:31:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:32:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:30:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:33:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:34:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:34:25-78
+meta-data#com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:37:13-39:40
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:39:17-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:38:17-92
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:46:9-53:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:49:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:48:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:47:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:57:13-59:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:59:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:58:17-122
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:60:13-62:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:62:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:61:17-119
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar
+ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:24:13-63
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:5-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:22-74
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/ab3a5feedd983a018ee9e673e41e3b1b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/ab3a5feedd983a018ee9e673e41e3b1b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:33:13-31
+	android:authorities
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:31:13-68
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:30:13-67
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:34:13-36:52
+	android:value
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:36:17-49
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:35:17-68
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:39:9-45:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:42:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:43:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:44:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:45:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:40:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:46:9-52:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:49:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:50:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:51:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:52:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:48:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:47:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:53:9-59:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:56:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:57:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:58:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:55:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:54:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:64:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:65:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:62:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:68:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:73:13-76:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:84:13-87:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:90:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:95:13-98:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:103:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:104:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:102:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:101:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:106:13-108:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:113:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:114:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:112:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:111:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:116:13-120:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:117:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:117:25-76
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:125:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:126:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:124:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:123:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:128:13-130:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:135:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:136:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:137:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:134:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:133:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:139:13-141:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:25-85
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:30:17-78
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.ritesh.phonefind.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.ritesh.phonefind.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:33:13-132

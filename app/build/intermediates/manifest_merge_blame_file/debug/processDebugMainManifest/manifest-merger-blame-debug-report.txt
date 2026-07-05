@@ -1,0 +1,590 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ritesh.phonefind"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions required by PhoneFind -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:7:5-79
+13-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:8:5-75
+14-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:8:22-72
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:9:5-79
+15-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:10:5-81
+16-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+17-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:11:5-85
+17-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:11:22-82
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+18-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:12:5-77
+18-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:12:22-74
+19    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+19-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:13:5-95
+19-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:13:22-92
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:14:5-81
+20-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:14:22-78
+21    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+21-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:15:5-80
+21-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:15:22-77
+22    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+22-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:24:5-68
+22-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:24:22-65
+23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+23-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:26:5-82
+23-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:26:22-79
+24    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+24-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:5-77
+24-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:22-74
+25
+26    <permission
+26-->[androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+27        android:name="com.ritesh.phonefind.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+29
+30    <uses-permission android:name="com.ritesh.phonefind.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+31
+32    <application
+32-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:17:5-65:19
+33        android:allowBackup="true"
+33-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:18:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.13.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/7835be719c75353e6aaf13a512d7a46a/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+35        android:dataExtractionRules="@xml/data_extraction_rules"
+35-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:19:9-65
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:fullBackupContent="@xml/backup_rules"
+38-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:20:9-54
+39        android:icon="@drawable/ic_phonefind_logo"
+39-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:21:9-51
+40        android:label="@string/app_name"
+40-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:23:9-41
+41        android:roundIcon="@drawable/ic_phonefind_logo"
+41-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:22:9-56
+42        android:supportsRtl="true"
+42-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:24:9-35
+43        android:theme="@style/Theme.PhoneFind"
+43-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:25:9-47
+44        android:usesCleartextTraffic="true" >
+44-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:26:9-44
+45        <activity
+45-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:29:9-37:20
+46            android:name="com.ritesh.phonefind.MainActivity"
+46-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:30:13-41
+47            android:exported="true"
+47-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:31:13-36
+48            android:theme="@style/Theme.PhoneFind" >
+48-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:32:13-51
+49            <intent-filter>
+49-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:33:13-36:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:34:17-69
+50-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:34:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:35:17-77
+52-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:35:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <!-- FCM Push Notification Listener Service (Step 5) -->
+57        <service
+57-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:40:9-46:19
+58            android:name="com.ritesh.phonefind.service.PhoneFindFcmService"
+58-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:41:13-56
+59            android:exported="false" >
+59-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:42:13-37
+60            <intent-filter>
+60-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:43:13-45:29
+61                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+61-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:44:17-78
+61-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:44:25-75
+62            </intent-filter>
+63        </service>
+64
+65        <!-- Device Admin Receiver for anti-tamper Protection (Step 6) -->
+66        <receiver
+66-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:49:9-63:20
+67            android:name="com.ritesh.phonefind.receiver.PhoneFindAdminReceiver"
+67-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:50:13-60
+68            android:description="@string/admin_description"
+68-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:51:13-60
+69            android:exported="true"
+69-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:54:13-36
+70            android:label="@string/admin_label"
+70-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:52:13-48
+71            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+71-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:53:13-70
+72            <meta-data
+72-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:55:13-57:65
+73                android:name="android.app.device_admin"
+73-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:56:17-56
+74                android:resource="@xml/device_admin_policies" />
+74-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:57:17-62
+75
+76            <intent-filter>
+76-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:58:13-62:29
+77                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+77-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:59:17-82
+77-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:59:25-79
+78                <action android:name="android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED" />
+78-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:60:17-92
+78-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:60:25-89
+79                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+79-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:61:17-83
+79-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:61:25-80
+80            </intent-filter>
+81        </receiver>
+82
+83        <service
+83-->[com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:23:9-29:19
+84            android:name="com.google.firebase.components.ComponentDiscoveryService"
+84-->[com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:24:13-84
+85            android:directBootAware="true"
+85-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+86            android:exported="false" >
+86-->[com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:25:13-37
+87            <meta-data
+87-->[com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:26:13-28:85
+88                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+88-->[com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:27:17-129
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-messaging-ktx:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/1ba58981f5e82441eaf19febbfa524fd/transformed/firebase-messaging-ktx-24.0.0/AndroidManifest.xml:28:17-82
+90            <meta-data
+90-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:57:13-59:85
+91                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+91-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:58:17-122
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:59:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:60:13-62:85
+94                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+94-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:61:17-119
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:62:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+97                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+97-->[com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+100                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+100-->[com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-installations:18.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/e88d1dcaafab9f6ac031bc793dfcb360/transformed/firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+103                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+103-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/932d53f49495e5d70abbfaf6fa9d87a6/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+106                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+106-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+109                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+109-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/4b050fc0b78ee461a3b96454e92f2638/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+111        </service>
+112
+113        <receiver
+113-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:29:9-40:20
+114            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+114-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:30:13-78
+115            android:exported="true"
+115-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:31:13-36
+116            android:permission="com.google.android.c2dm.permission.SEND" >
+116-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:32:13-73
+117            <intent-filter>
+117-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:33:13-35:29
+118                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+118-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:34:17-81
+118-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:34:25-78
+119            </intent-filter>
+120
+121            <meta-data
+121-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:37:13-39:40
+122                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+122-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:38:17-92
+123                android:value="true" />
+123-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:39:17-37
+124        </receiver>
+125        <!--
+126             FirebaseMessagingService performs security checks at runtime,
+127             but set to not exported to explicitly avoid allowing another app to call it.
+128        -->
+129        <service
+129-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:46:9-53:19
+130            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+130-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:47:13-82
+131            android:directBootAware="true"
+131-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:48:13-43
+132            android:exported="false" >
+132-->[com.google.firebase:firebase-messaging:24.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/2c7d6447fd2fd7674f60009ab77c1b96/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:49:13-37
+133            <intent-filter android:priority="-500" >
+133-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:43:13-45:29
+134                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+134-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:44:17-78
+134-->/Users/ritesh/.gemini/antigravity-ide/scratch/PhoneFind/app/src/main/AndroidManifest.xml:44:25-75
+135            </intent-filter>
+136        </service>
+137
+138        <activity
+138-->[com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+139            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+139-->[com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.google.android.gms:play-services-base:18.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/84f4838138c85819622e77ecf2ee1b5a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+142
+143        <provider
+143-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+144            android:name="com.google.firebase.provider.FirebaseInitProvider"
+144-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+145            android:authorities="com.ritesh.phonefind.firebaseinitprovider"
+145-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+146            android:directBootAware="true"
+146-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+147            android:exported="false"
+147-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+148            android:initOrder="100" />
+148-->[com.google.firebase:firebase-common:21.0.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/44cebceb540f1dcebb14bd1bd2da8dbe/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+149
+150        <activity
+150-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:23:9-25:39
+151            android:name="androidx.activity.ComponentActivity"
+151-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:24:13-63
+152            android:exported="true" />
+152-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/1c67bf4c562f83b203c13b3ac8bb19c4/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:25:13-36
+153        <activity
+153-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+154            android:name="androidx.compose.ui.tooling.PreviewActivity"
+154-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+155            android:exported="true" />
+155-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/ritesh/.gradle/caches/8.14.5/transforms/828f2416b486a1409612f82afb331c36/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+156
+157        <provider
+157-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:29:9-37:20
+158            android:name="androidx.startup.InitializationProvider"
+158-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:30:13-67
+159            android:authorities="com.ritesh.phonefind.androidx-startup"
+159-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:31:13-68
+160            android:exported="false" >
+160-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:32:13-37
+161            <meta-data
+161-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:34:13-36:52
+162                android:name="androidx.work.WorkManagerInitializer"
+162-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:35:17-68
+163                android:value="androidx.startup" />
+163-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:36:17-49
+164            <meta-data
+164-->[androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+165                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+165-->[androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+166                android:value="androidx.startup" />
+166-->[androidx.emoji2:emoji2:1.3.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/054d9e9d8c6c22348063779f549f6121/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+167            <meta-data
+167-->[androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:29:13-31:52
+168                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+168-->[androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:30:17-78
+169                android:value="androidx.startup" />
+169-->[androidx.lifecycle:lifecycle-process:2.8.2] /Users/ritesh/.gradle/caches/8.14.5/transforms/665e860a25897defd7c6c49d736a7402/transformed/lifecycle-process-2.8.2/AndroidManifest.xml:31:17-49
+170            <meta-data
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+171                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+172                android:value="androidx.startup" />
+172-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+173        </provider>
+174
+175        <service
+175-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:39:9-45:35
+176            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+176-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:40:13-88
+177            android:directBootAware="false"
+177-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:41:13-44
+178            android:enabled="@bool/enable_system_alarm_service_default"
+178-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:42:13-72
+179            android:exported="false" />
+179-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:43:13-37
+180        <service
+180-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:46:9-52:35
+181            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+181-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:47:13-84
+182            android:directBootAware="false"
+182-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:48:13-44
+183            android:enabled="@bool/enable_system_job_service_default"
+183-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:49:13-70
+184            android:exported="true"
+184-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:50:13-36
+185            android:permission="android.permission.BIND_JOB_SERVICE" />
+185-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:51:13-69
+186        <service
+186-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:53:9-59:35
+187            android:name="androidx.work.impl.foreground.SystemForegroundService"
+187-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:54:13-81
+188            android:directBootAware="false"
+188-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:55:13-44
+189            android:enabled="@bool/enable_system_foreground_service_default"
+189-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:56:13-77
+190            android:exported="false" />
+190-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:57:13-37
+191
+192        <receiver
+192-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:61:9-66:35
+193            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+193-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:62:13-88
+194            android:directBootAware="false"
+194-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:63:13-44
+195            android:enabled="true"
+195-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:64:13-35
+196            android:exported="false" />
+196-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:65:13-37
+197        <receiver
+197-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:67:9-77:20
+198            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+198-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:68:13-106
+199            android:directBootAware="false"
+199-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:69:13-44
+200            android:enabled="false"
+200-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:70:13-36
+201            android:exported="false" >
+201-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:71:13-37
+202            <intent-filter>
+202-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:73:13-76:29
+203                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+203-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:17-87
+203-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:25-84
+204                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+204-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:17-90
+204-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:25-87
+205            </intent-filter>
+206        </receiver>
+207        <receiver
+207-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:78:9-88:20
+208            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+208-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:79:13-104
+209            android:directBootAware="false"
+209-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:80:13-44
+210            android:enabled="false"
+210-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:81:13-36
+211            android:exported="false" >
+211-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:82:13-37
+212            <intent-filter>
+212-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:84:13-87:29
+213                <action android:name="android.intent.action.BATTERY_OKAY" />
+213-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:17-77
+213-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:25-74
+214                <action android:name="android.intent.action.BATTERY_LOW" />
+214-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:17-76
+214-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:25-73
+215            </intent-filter>
+216        </receiver>
+217        <receiver
+217-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:89:9-99:20
+218            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+218-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:90:13-104
+219            android:directBootAware="false"
+219-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:91:13-44
+220            android:enabled="false"
+220-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:92:13-36
+221            android:exported="false" >
+221-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:93:13-37
+222            <intent-filter>
+222-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:95:13-98:29
+223                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+223-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:17-83
+223-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:25-80
+224                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+224-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:17-82
+224-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:25-79
+225            </intent-filter>
+226        </receiver>
+227        <receiver
+227-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:100:9-109:20
+228            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+228-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:101:13-103
+229            android:directBootAware="false"
+229-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:102:13-44
+230            android:enabled="false"
+230-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:103:13-36
+231            android:exported="false" >
+231-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:104:13-37
+232            <intent-filter>
+232-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:106:13-108:29
+233                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+233-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:17-79
+233-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:25-76
+234            </intent-filter>
+235        </receiver>
+236        <receiver
+236-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:110:9-121:20
+237            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+237-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:111:13-88
+238            android:directBootAware="false"
+238-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:112:13-44
+239            android:enabled="false"
+239-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:113:13-36
+240            android:exported="false" >
+240-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:114:13-37
+241            <intent-filter>
+241-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:116:13-120:29
+242                <action android:name="android.intent.action.BOOT_COMPLETED" />
+242-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:117:17-79
+242-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:117:25-76
+243                <action android:name="android.intent.action.TIME_SET" />
+243-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:17-73
+243-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:25-70
+244                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+244-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:17-81
+244-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:25-78
+245            </intent-filter>
+246        </receiver>
+247        <receiver
+247-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:122:9-131:20
+248            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+248-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:123:13-99
+249            android:directBootAware="false"
+249-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:124:13-44
+250            android:enabled="@bool/enable_system_alarm_service_default"
+250-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:125:13-72
+251            android:exported="false" >
+251-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:126:13-37
+252            <intent-filter>
+252-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:128:13-130:29
+253                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+253-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:17-98
+253-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:25-95
+254            </intent-filter>
+255        </receiver>
+256        <receiver
+256-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:132:9-142:20
+257            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+257-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:133:13-78
+258            android:directBootAware="false"
+258-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:134:13-44
+259            android:enabled="true"
+259-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:135:13-35
+260            android:exported="true"
+260-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:136:13-36
+261            android:permission="android.permission.DUMP" >
+261-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:137:13-57
+262            <intent-filter>
+262-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:139:13-141:29
+263                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+263-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:17-88
+263-->[androidx.work:work-runtime:2.9.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0b599cb8df66af8051ce51067a077898/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:25-85
+264            </intent-filter>
+265        </receiver>
+266
+267        <meta-data
+267-->[com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+268            android:name="com.google.android.gms.version"
+268-->[com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+269            android:value="@integer/google_play_services_version" />
+269-->[com.google.android.gms:play-services-basement:18.4.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/0e7241fc9cf893d01115f9f982570927/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+270
+271        <service
+271-->[androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+272            android:name="androidx.room.MultiInstanceInvalidationService"
+272-->[androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+273            android:directBootAware="true"
+273-->[androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+274            android:exported="false" />
+274-->[androidx.room:room-runtime:2.5.0] /Users/ritesh/.gradle/caches/8.14.5/transforms/292f2cd90db92509dd6d3a543e07a8f3/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+275
+276        <receiver
+276-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+277            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+277-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+278            android:directBootAware="false"
+278-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+279            android:enabled="true"
+279-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+280            android:exported="true"
+280-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+281            android:permission="android.permission.DUMP" >
+281-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+282            <intent-filter>
+282-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+283                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+283-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+283-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+284            </intent-filter>
+285            <intent-filter>
+285-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+286                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+286-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+286-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+287            </intent-filter>
+288            <intent-filter>
+288-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+289                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+289-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+289-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+290            </intent-filter>
+291            <intent-filter>
+291-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+292                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+292-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+292-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ritesh/.gradle/caches/8.14.5/transforms/533de23f0afe34e5a97098d281c9f51e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+293            </intent-filter>
+294        </receiver>
+295
+296        <service
+296-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+297            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+297-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+298            android:exported="false" >
+298-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+299            <meta-data
+299-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+300                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+300-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+301                android:value="cct" />
+301-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/2d434838ab32a1c00277339f392a9a89/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+302        </service>
+303        <service
+303-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+304            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+304-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+305            android:exported="false"
+305-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+306            android:permission="android.permission.BIND_JOB_SERVICE" >
+306-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+307        </service>
+308
+309        <receiver
+309-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+310            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+310-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+311            android:exported="false" />
+311-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/ritesh/.gradle/caches/8.14.5/transforms/f97c349f01e32b6ab1bd0c25abc5f1c0/transformed/transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+312    </application>
+313
+314</manifest>

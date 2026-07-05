@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhoneFind</string>
+    <string name="admin_label">PhoneFind Security Admin</string>
+    <string name="admin_description">Enables anti-tamper security features, remote device lock, and data wipe protection for PhoneFind.</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admin_description">Enables anti-tamper security features, remote device lock, and data wipe protection for PhoneFind.</string>
+    <string name="admin_label">PhoneFind Security Admin</string>
+    <string name="app_name">PhoneFind</string>
+    <string name="gcm_defaultSenderId" translatable="false">151076391302</string>
+    <string name="google_api_key" translatable="false">AIzaSyBdIt91q1rSUdkZy3f68B1SNot2I8VLrao</string>
+    <string name="google_app_id" translatable="false">1:151076391302:android:454bf1ebfb92559ed50407</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBdIt91q1rSUdkZy3f68B1SNot2I8VLrao</string>
+    <string name="google_storage_bucket" translatable="false">phonefind-7101c.firebasestorage.app</string>
+    <string name="project_id" translatable="false">phonefind-7101c</string>
+    <style name="Theme.PhoneFind" parent="android:Theme.Material.Light.NoActionBar"/>
+</resources>

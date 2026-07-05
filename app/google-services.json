@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "151076391302",
+    "project_id": "phonefind-7101c",
+    "storage_bucket": "phonefind-7101c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151076391302:android:454bf1ebfb92559ed50407",
+        "android_client_info": {
+          "package_name": "com.ritesh.phonefind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdIt91q1rSUdkZy3f68B1SNot2I8VLrao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
