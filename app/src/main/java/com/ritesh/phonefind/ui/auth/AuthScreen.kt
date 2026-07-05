@@ -119,12 +119,11 @@ fun AuthScreen(
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "PHONEFIND",
+                text = "PhoneFind",
                 style = MaterialTheme.typography.headlineLarge.copy(
                     fontWeight = FontWeight.Black,
                     fontFamily = FontFamily.Monospace,
                     fontSize = 30.sp,
-                    letterSpacing = 2.sp,
                     color = Color.Black
                 )
             )
