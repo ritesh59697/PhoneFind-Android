@@ -238,7 +238,7 @@ fun AuthScreen(
                     OutlinedTextField(
                         value = email,
                         onValueChange = { email = it },
-                        placeholder = { Text("Enter your email", color = Color(0xFFAAAAAA), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
+                        placeholder = { Text("name@domain.com", color = Color(0xFFAAAAAA), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
                         leadingIcon = {
                             Icon(Icons.Default.Email, contentDescription = null, tint = Color.Black, modifier = Modifier.size(18.dp))
                         },
@@ -272,7 +272,7 @@ fun AuthScreen(
                     OutlinedTextField(
                         value = password,
                         onValueChange = { password = it },
-                        placeholder = { Text("Enter your password", color = Color(0xFFAAAAAA), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
+                        placeholder = { Text("••••••••", color = Color(0xFFAAAAAA), fontFamily = FontFamily.Monospace, fontSize = 12.sp) },
                         leadingIcon = {
                             Icon(Icons.Default.Lock, contentDescription = null, tint = Color.Black, modifier = Modifier.size(18.dp))
                         },
