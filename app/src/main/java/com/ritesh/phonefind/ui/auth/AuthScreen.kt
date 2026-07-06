@@ -338,16 +338,18 @@ fun AuthScreen(
                     Spacer(modifier = Modifier.height(24.dp))
 
                     // Neo-Brutalist Action Button with Hard Offset Shadow
-                    Box(modifier = Modifier.fillMaxWidth().height(48.dp)) {
-                        // Shadow Box
-                        Box(
-                            modifier = Modifier
-                                .matchParentSize()
-                                .offset(x = 3.dp, y = 3.dp)
-                                .background(Color.Black, shape = RoundedCornerShape(8.dp))
-                        )
+                    val isFormValid = email.isNotBlank() && password.isNotBlank()
 
-                        // Main Button
+                    Box(modifier = Modifier.fillMaxWidth().height(50.dp)) {
+                        if (isFormValid) {
+                            Box(
+                                modifier = Modifier
+                                    .matchParentSize()
+                                    .offset(x = 4.dp, y = 4.dp)
+                                    .background(Color.Black, shape = RoundedCornerShape(8.dp))
+                            )
+                        }
+
                         Button(
                             onClick = {
                                 if (selectedTab == 0) {
@@ -358,19 +360,24 @@ fun AuthScreen(
                             },
                             modifier = Modifier
                                 .fillMaxSize()
-                                .border(2.5.dp, Color.Black, RoundedCornerShape(8.dp)),
+                                .border(
+                                    width = 2.5.dp,
+                                    color = if (isFormValid) Color.Black else Color(0xFF888888),
+                                    shape = RoundedCornerShape(8.dp)
+                                ),
                             shape = RoundedCornerShape(8.dp),
                             colors = ButtonDefaults.buttonColors(
-                                containerColor = Color(0xFF00E676), // Bright Neo-Brutalist Emerald
-                                contentColor = Color.Black,
-                                disabledContainerColor = Color(0xFF00E676).copy(alpha = 0.5f)
+                                containerColor = Color.Black,
+                                contentColor = Color.White,
+                                disabledContainerColor = Color(0xFFE5E5E0),
+                                disabledContentColor = Color(0xFF777777)
                             ),
-                            enabled = uiState !is AuthUiState.Loading && email.isNotBlank() && password.isNotBlank()
+                            enabled = uiState !is AuthUiState.Loading && isFormValid
                         ) {
                             if (uiState is AuthUiState.Loading) {
                                 CircularProgressIndicator(
                                     modifier = Modifier.size(20.dp),
-                                    color = Color.Black,
+                                    color = Color.White,
                                     strokeWidth = 2.5.dp
                                 )
                             } else {
@@ -379,8 +386,7 @@ fun AuthScreen(
                                     fontSize = 13.sp,
                                     fontFamily = FontFamily.Monospace,
                                     fontWeight = FontWeight.Black,
-                                    letterSpacing = 1.sp,
-                                    color = Color.Black
+                                    letterSpacing = 1.sp
                                 )
                             }
                         }
